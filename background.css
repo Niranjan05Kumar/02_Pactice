@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+}
+.background{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 2px;
+}
+.background::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#111, #0f16e8df, #111);
+    animation: backgroundanimation 3s linear infinite;
+}
+@keyframes backgroundanimation{
+    0%{
+       transform: translateY(-100%);
+    }  
+    
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.background span{
+    position: relative;
+    display: block;
+    flex-grow: 1;
+    width: calc(6.25vw - 2px);
+    height: calc(6.25vw - 2px);
+    background-color: #111;
+    z-index: 2;
+    transition: 1.5s;
+}
+.background span:hover{
+    background-color: #0f16e8df;
+    transition: 0s;
+}
+
+@media (min-width:1024px) {
+    .background span{
+        width: calc(4vw - 4px);
+        height: calc(4vw - 4px);
+    }
+}

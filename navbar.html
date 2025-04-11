@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar start -->
+    <div class="navbar-box">
+        <nav class="navbar">
+
+            <!-- <div class="navsidebar">
+                <a href="#"  onclick=hideSidebar() class="hide-menu"> &#x2715;</a>
+                <a href="#" class="shop-arw">Shop <i class='bx bxs-chevron-right'></i>
+                </a>
+                <a href="#"> On Sale</a>
+                <a href="#"> New Arrivals</a>
+                <a href="#"> Brands</a>
+            </div> -->
+           
+            <div class="show-menu" onclick=showSidebar()>
+                <a href="#">&#9776;</a>
+            </div>
+    
+            <div class="shopco">
+                <a href="#">SHOP.CO</a>
+            </div>
+
+            <div class="navlist">
+                <a href="#" class="hidenavlist">
+                    Shop <i class='bx bxs-chevron-down'></i>
+                </a>
+                <a href="#" class="hidenavlist"> On Sale</a>
+                <a href="#" class="hidenavlist"> New Arrivals</a>
+                <a href="#" class="hidenavlist"> Brands</a>
+            </div>
+    
+            <div class="navsearch">
+                <input type="text" placeholder="Search products..." >
+                <i class='bx bx-search'></i>
+            </div>
+    
+            <div class="navicons">
+                <i class='bx bx-search'></i>
+                <a href="#"> <i class='bx bx-cart' ></i> </a>
+                <a href="#"> <i class='bx bx-user-circle' ></i> </a>
+            </div>
+    
+        </nav>
+     </div>
+    <!-- Navbar End -->
+
+    <script src="navbar.js"></script>
+</body>
+</html>

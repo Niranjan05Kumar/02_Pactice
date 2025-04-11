@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Inter', sans-serif; */
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+/* navbar start */
+
+.navbar-box{
+    width: 100%;
+    background-color: var(--background-color);
+}
+.navbar-box .navbar{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.navbar .shopco a{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Arial', sans-serif;
+}
+.navbar .navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.navbar .navlist a{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 300ms linear;
+}
+.navbar .navlist a:hover{
+    background-color: var(--light-gray);
+}
+.navbar .navsearch{
+    width: 25%;
+    position: relative;
+}
+.navbar .navsearch input{
+    width: 100%;
+    border: none;
+    background-color: var(--light-gray);
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 25px;
+}
+.navbar .navsearch i{
+    color: var(--gray);
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-weight: 600;
+}
+.navbar .navicons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 12px;
+}
+.navbar .navicons i{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.navbar .navicons .bx-search{
+    display: none;
+}
+
+.navsidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: #ffffff05;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+}
+.navsidebar a{
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+.navsidebar a:hover{
+    background-color: var(--light-gray);
+}
+.show-menu a{
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 900;
+    display: none ;
+}
+.hide-menu{
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+.show-menu{
+    display: none;
+}
+
+/* @media (max-width:768px) {
+    .hidenavlist{
+        display: none;
+    }
+    .show-menu a{
+        display: flex;
+     }
+    .navbar{
+        height: 5.5rem;
+    }
+    .navbar .shopco a{
+        font-size: 2rem;
+    }
+} */
+
+/* @media (max-width:426px) {
+    .navbar .shopco a{
+        font-size: 1.8rem;
+    }
+    .show-menu a{
+        color: black;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    .navbar{
+        height: 4.5rem;
+    }
+    .navsearch{
+        display: none;
+    }
+    .navbar .navicons .bx-search{
+        display: flex;
+    }
+    .navbar .navicons{
+        font-size: 1.8rem;
+    }
+    .navsidebar{
+        width: 100%;
+    }
+} */
